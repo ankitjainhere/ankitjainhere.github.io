@@ -12,19 +12,19 @@
 
 body {
   margin: 0px;
-  padding: 0px;
+  padding: 0 15%;
   font-family: "Righteous";
 }
 
 header {
-  background-color: black;
+  background-color: transparent;
   color: white;
-  padding: 0 10rem;
+  padding: 0 10vh;
 }
 
 #siteName {
-    margin: 0.8rem 0rem;
-    font-size: 2rem;
+    margin: 1.8vh;
+    font-size: 1.8rem;
 }
 
 .header {
@@ -34,8 +34,55 @@ header {
 }
 
 .navitem {
-  padding: 0 1rem;
+  padding: 0 1vh;
   text-decoration: none;
   color: rgb(219, 219, 219);
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
+}
+
+#welcome {
+    height: 750px;
+    width: 100%;
+    background-image: url("./../assets/img/development-cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+#profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 100px 80px 0 0;
+}
+
+#profile-pic {
+    height: 200px;
+    width: 200px;
+    float: right;
+
+}
+
+#profile-about {
+    padding: 40px;
+    text-align: center;
+}
+
+#profile-about-name, #profile-about-tag {
+    margin: 0px;
+    color: #fff;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-right: 60px;
+}
+
+.link-item-img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
 }
