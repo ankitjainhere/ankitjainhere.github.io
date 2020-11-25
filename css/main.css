@@ -17,17 +17,23 @@ body {
 }
 
 header {
-  background-color: transparent;
-  color: white;
-  padding: 0 10vh;
+
+}
+
+a {
+  text-decoration: none;
 }
 
 #siteName {
     margin: 1.8vh;
     font-size: 1.8rem;
+    color: #fff;
 }
 
 .header {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 0 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +66,7 @@ header {
 #profile-pic {
     height: 200px;
     width: 200px;
-    float: right;
+    border-radius: 50%;
 
 }
 
