@@ -3,40 +3,53 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2)
-    format("woff2");
+  /* src: url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format("woff2"); */
+  src: url("/fonts/Righteous-Regular.ttf");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
 
-body {
-  margin: 0px;
-  padding: 0 15%;
-  font-family: "Righteous";
+html {
+  scroll-behavior: smooth;
 }
 
-header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  text-align: center;
+  font-family: "Righteous";
+  color: #fff;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 #siteName {
-    margin: 1.8vh;
-    font-size: 1.8rem;
-    color: #fff;
+  margin: 1.8vh;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: rgb(47, 84, 113);
   color: white;
-  padding: 0 10vh;
+  padding: 0 55vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav {
+  cursor: pointer;
 }
 
 .navitem {
@@ -46,49 +59,157 @@ a {
   /* font-size: 1.1rem; */
 }
 
+#wide-background {
+  background-color: #2f5471;
+  display: flex;
+  justify-content: center;
+}
+
 #welcome {
-    height: 750px;
-    width: 100%;
-    background-image: url("./../assets/img/development-cover.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 50px;
+  height: 750px;
+  width: 70%;
+
+  background-image: url("./../assets/img/development-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* border-radius: 50px; */
 }
 
 #profile {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 100px 80px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 100px 80px 0 0;
 }
 
 #profile-pic {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 #profile-about {
-    padding: 40px;
-    text-align: center;
+  padding: 40px;
+  text-align: center;
 }
 
-#profile-about-name, #profile-about-tag {
-    margin: 0px;
-    color: #fff;
+#profile-about-name,
+#profile-about-tag {
+  margin: 0px;
+  color: #fff;
 }
 
 #links {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    margin-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: 60px;
 }
 
 .link-item-img {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+#aboutMe {
+  /* transform: translateY(-30px); */
+  text-align: center;
+  /* background-color: #2f5471; */
+  background-color: rgb(98, 194, 120);
+  color: #fff;
+  padding: 125px 0;
+}
+
+#projects {
+  padding: 100px;
+  background-color: rgb(47, 84, 113);
+  color: #fff;
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  justify-items: center;
+}
+
+#android-project {
+  background-image: url(/assets/img/Android-app-.png);
+  height: 250px;
+  width: 500px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+#ecommerce-project {
+  background-image: url(/assets/img/webdevelopment2.jpg);
+  height: 250px;
+  width: 500px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+#tech {
+
+  background-color: rgb(98, 194, 120);
+  padding: 50px 30%;
+}
+
+#tech-container {
+  color: #000;
+  justify-items: center;
+  padding: 30px;
+}
+
+.tech-item {
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 3px 15px;
+  background-color: #fff;
+  margin: 15px 30px;
+}
+
+#education {
+  background-color: rgb(47, 84, 113);
+  padding: 50px 25%;
+}
+
+.education-content {
+  padding: 30px 10px;
+}
+
+.education-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-item {
+  padding: 30px 0;
+}
+
+.education-content h5 {
+  text-align: left;
+}
+
+hr {
+  color: rgb(98, 194, 120);
+}
+
+footer {
+  background-color: rgb(98, 194, 120);
+  /* background-color: black; */
+  padding: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
 }
