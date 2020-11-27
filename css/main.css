@@ -136,7 +136,7 @@ a {
 }
 
 #android-project {
-  background-image: url(/assets/img/Android-app-.png);
+  background-image: url("./../assets/img/Android-app-.png");
   height: 250px;
   width: 500px;
   object-fit: cover;
@@ -146,7 +146,7 @@ a {
 }
 
 #ecommerce-project {
-  background-image: url(/assets/img/webdevelopment2.jpg);
+  background-image: url("./../assets/img/webdevelopment2.jpg");
   height: 250px;
   width: 500px;
   object-fit: cover;
