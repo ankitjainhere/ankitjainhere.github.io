@@ -18,11 +18,11 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
-const navItem = document.querySelector(".home");
-navItem.addEventListener("click", () => {
-  menuBtn.classList.remove("open");
-  header.classList.remove("hide");
-  nav.classList.remove("show");
-  fullPgNav.classList.remove("show");
-  menuOpen = false;
-});
+    // const navItem = document.querySelector(".home");
+    // navItem.addEventListener("click", () => {
+    //   menuBtn.classList.remove("open");
+    //   header.classList.remove("hide");
+    //   nav.classList.remove("show");
+    //   fullPgNav.classList.remove("show");
+    //   menuOpen = false;
+    // });

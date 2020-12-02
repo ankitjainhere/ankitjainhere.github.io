@@ -42,6 +42,7 @@ a {
 .header {
   position: sticky;
   top: 0;
+  padding: 0 10%;
   /* background-color: rgb(47, 84, 113); */
   background-color: rgba(0, 0, 0, 1);
   color: white;
@@ -120,6 +121,10 @@ a {
 
 .menu_icon.open .burger::after {
   transform: rotate(-45deg) translate(4px, 4px);
+}
+
+.full-pg-nav {
+  display: none;
 }
 
 #welcome {
@@ -278,9 +283,9 @@ h5 {
   font-size: 1.5rem;
 }
 
-span {
+/* span {
   font-size: 1.5rem;
-}
+} */
 
 @media (max-width: 1399px) {
   html {
@@ -321,7 +326,7 @@ span {
   }
   .full-pg-nav {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     z-index: 2;
@@ -330,17 +335,18 @@ span {
     width: 100%;
     height: 100vh;
     clip-path: circle(10px at 95% -10%);
-    -webkit-clip-path: circle(1000px at 95% -10%);
+    -webkit-clip-path: circle(10px at 95% -10%);
     transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
   }
-  .full-pg-nav.show {
-    clip-path: circle(1000px at 95% -10%);
-    -webkit-clip-path: circle(1000px at 95% -10%);
+  .full-pg-nav.show{
+    clip-path: circle(90% at 95% -10%);
+    -webkit-clip-path: circle(90% at 95% -10%);
     transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
   }
   .navItem {
     margin: 3vh;
     color: #000;
+    font-size: 2.5rem;
   }
 }
 
