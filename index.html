@@ -13,6 +13,19 @@
             <h1 id="siteName">Ankit</h1>
         </a>
         <nav class="nav">
+            <a class="navItem home" href="#"><span>Home</span></a>
+            <a class="navItem" href="#aboutMe"><span>About Me</span></a>
+            <a class="navItem" href="#projects"><span>Projects</span></a>
+            <!-- <a class="navItem" href="#experience"><span>Experience</span></a> -->
+            <a class="navItem" href="#tech"><span>Tech</span></a>
+            <a class="navItem" href="#education"><span>Education</span></a>
+        </nav>
+        <div class="menu_icon">
+            <div class="burger"></div>
+        </div>
+    </header>
+    <div id="welcome">
+        <nav class="full-pg-nav">
             <a class="navItem" href="#"><span>Home</span></a>
             <a class="navItem" href="#aboutMe"><span>About Me</span></a>
             <a class="navItem" href="#projects"><span>Projects</span></a>
@@ -20,46 +33,44 @@
             <a class="navItem" href="#tech"><span>Tech</span></a>
             <a class="navItem" href="#education"><span>Education</span></a>
         </nav>
-    </header>
-    <div id="wide-background">
-        <div id="welcome">
-            <div id="profile">
-                <div id="profile-about">
-                    <h1 id="profile-about-name">Ankit Jain</h1>
-                    <h3 id="profile-about-tag">A Front-End Developer</h3>
-                </div>
-                <div>
-                    <img id="profile-pic" src="./assets/img/profile-picture-300x300.jpg" alt="Ankit">
-                </div>
+
+        <div id="profile">
+            <div id="profile-about">
+                <h1 id="profile-about-name">Ankit Jain</h1>
+                <h3 id="profile-about-tag">A Front-End Developer</h3>
             </div>
-            <div id="links">
-                <a href="https://www.linkedin.com/in/ankit-jain-900858193/"><img class="link-item-img"
-                        src="./assets/img/linkedin.png" alt=""></a>
-                <a href="mailto:akjain6067.aj@gmail.com"><img class="link-item-img" src="./assets/img/gmail.png"
-                        alt=""></a>
-                <a href="https://github.com/ankitjain-1"><img class="link-item-img" src="./assets/img/github.png"
-                        alt=""></a>
-                <a href="https://stackoverflow.com/users/13126781/ankit-jain"><img class="link-item-img"
-                        src="./assets/img/stack-overflow.png" alt=""></a>
-                <a href="https://instagram.com/being.single__"><img class="link-item-img"
-                        src="./assets/img/instagram2.png" alt=""></a>
+            <div>
+                <img id="profile-pic" src="./assets/img/profile-picture-300x300.jpg" alt="Ankit">
             </div>
+        </div>
+        <div id="links">
+            <a href="https://www.linkedin.com/in/ankit-jain-900858193/"><img class="link-item-img"
+                    src="./assets/img/linkedin.png" alt=""></a>
+            <a href="mailto:akjain6067.aj@gmail.com"><img class="link-item-img" src="./assets/img/gmail.png" alt=""></a>
+            <a href="https://github.com/ankitjain-1"><img class="link-item-img" src="./assets/img/github.png"
+                    alt=""></a>
+            <a href="https://stackoverflow.com/users/13126781/ankit-jain"><img class="link-item-img"
+                    src="./assets/img/stack-overflow.png" alt=""></a>
+            <a href="https://instagram.com/being.single__"><img class="link-item-img" src="./assets/img/instagram2.png"
+                    alt=""></a>
         </div>
     </div>
 
     <div id="aboutMe">
-        <h1>About Me</h1>
-        <p>I'm Ankit Jain, Student at Jabalpur Engineering College</p>
+        <h1 class="h1">About Me</h1>
+        <h4>I'm Ankit Jain, Student at Jabalpur Engineering College</h4>
     </div>
     <div id="projects">
-        <h1>Projects</h1>
+        <h1 class="h1">Projects</h1>
         <h4>These are the projects that I developed</h4>
         <div id="projects-grid">
-            <div id="android-project">
-                <h5>Androi Music Player</h5>
+            <div class="project">
+                <h5>Android Music Player</h5>
+                <img class="project-image" src="./assets/img/Android-app-.png" alt="android-project">
             </div>
-            <div id="ecommerce-project">
+            <div class="project">
                 <h5>E-Commerce Website</h5>
+                <img class="project-image" src="./assets/img/webdevelopment2.jpg" alt="web-development">
             </div>
         </div>
     </div>
@@ -67,7 +78,7 @@
 
     </div> -->
     <div id="tech">
-        <h1>Tech</h1>
+        <h1 class="h1">Tech</h1>
         <h4>Technologies I like working with</h4>
         <div id="tech-container">
             <span class="tech-item">HTML</span>
@@ -80,7 +91,7 @@
         </div>
     </div>
     <div id="education">
-        <h1>Education</h1>
+        <h1 class="h1">Education</h1>
         <div class="education-content">
             <div class="education-item">
                 <div class="education-name">
@@ -102,7 +113,7 @@
     <footer>
         <div class="footer-content">
             <a href="#">
-                <h1>Ankit Jain</h1>
+                <h1 class="h1">Ankit Jain</h1>
             </a>
             <a href="https://www.linkedin.com/in/ankit-jain-900858193/"><img class="link-item-img"
                     src="./assets/img/linkedin.png" alt=""></a>
@@ -115,6 +126,8 @@
                     alt=""></a>
         </div>
     </footer>
+
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
