@@ -28,3 +28,16 @@ navItems.forEach((item) => {
     menuOpen = false;
   });
 });
+
+const loader = document.querySelector('.loader');
+const linksDiv = document.querySelector('#links');
+linksDiv.addEventListener('click', () => {
+  loader.classList.add('show');
+  setTimeout(() => {
+    loader.classList.add('fade');
+    setTimeout(() => {
+      loader.classList.remove('show');
+      loader.classList.remove('fade');
+    }, 1700);
+  }, 1000);
+})
