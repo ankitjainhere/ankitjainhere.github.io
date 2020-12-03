@@ -141,9 +141,9 @@ a {
 
 #profile {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 15rem 10rem 0 0;
+  padding-top: 10vh;
 }
 
 #profile-pic {
@@ -166,15 +166,16 @@ a {
 
 #links {
   display: flex;
-  justify-content: flex-end;
-  padding: 2rem;
-  margin-right: 6rem;
+  justify-content: center;
+  padding: 5rem;
+  /*! margin-right: 6rem; */
 }
 
 .link-item-img {
   width: 4rem;
   height: 4rem;
   padding: 0.5rem;
+  margin: 10px;
 }
 
 #aboutMe {
