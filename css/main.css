@@ -129,13 +129,14 @@ a {
 }
 
 #welcome {
-  height: 92vh;
+  height: 90vh;
   background-image: url("./../assets/img/development-cover_2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   /* border-radius: 50rem; */
   background-attachment: fixed;
+  transition: all 1s linear;
 }
 
 #profile {
@@ -253,8 +254,8 @@ a {
   text-align: left;
 }
 
-hr {
-  color: rgb(98, 194, 120);
+.hr-dark {
+  color: #000;
 }
 
 footer {
@@ -315,7 +316,7 @@ h5 {
     grid-template-columns: 1fr;
   }
   #education {
-    padding: 10rem 10%;
+    padding: 12rem 10%;
   }
   .nav {
     display: none;
@@ -340,7 +341,7 @@ h5 {
     -webkit-clip-path: circle(10px at 95% -10%);
     transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
   }
-  .full-pg-nav.show{
+  .full-pg-nav.show {
     clip-path: circle(90% at 95% -10%);
     -webkit-clip-path: circle(90% at 95% -10%);
     transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
@@ -352,25 +353,48 @@ h5 {
   }
 }
 
+@media (max-width: 768px) {
+  #welcome {
+    background-attachment: scroll;
+  }
+  #profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10vh;
+    flex-flow: column;
+  }
+  #links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 0;
+  }
+  .link-item-img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 50%;
   }
   #projects {
-    padding: 10% 0;
+    padding: 12rem 0;
   }
   #aboutMe {
-    padding: 10rem 0;
+    padding: 12rem 0;
   }
   .project-image {
     width: 90%;
     height: auto;
   }
   #tech {
-    padding: 10rem 2%;
+    padding: 12rem 2%;
   }
   #education {
-    padding: 10rem 2%;
+    padding: 12rem 2%;
   }
   footer {
     font-size: 40%;
