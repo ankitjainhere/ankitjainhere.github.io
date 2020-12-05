@@ -94,7 +94,7 @@ a {
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(.7,0,.02,1.72);
   transform: translate(-15px, -10px);
 }
 
@@ -103,7 +103,7 @@ a {
   height: 4px;
   background: #fff;
   border-radius: 3px;
-  transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(.7,0,.02,1.72);
 }
 
 .burger::after {
@@ -113,7 +113,7 @@ a {
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(.7,0,.02,1.72);
   transform: translate(-15px, 10px);
 }
 
