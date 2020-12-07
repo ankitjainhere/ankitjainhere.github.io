@@ -29,6 +29,30 @@ body {
   background-color: black;
 }
 
+.splash-screen {
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+
+.splash-logo {
+  width: 15vh;
+  filter: grayscale(100%);
+  opacity: 0;
+}
+.splash-logo.zoomColorFadein {
+  width: 25vh;
+  opacity: 1;
+  transition: all 1.2s ease;
+  filter: none;
+}
+
+
 a {
   text-decoration: none;
   color: #fff;
@@ -94,7 +118,7 @@ a {
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  transition: all 0.5s cubic-bezier(.7,0,.02,1.72);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.02, 1.72);
   transform: translate(-15px, -10px);
 }
 
@@ -103,7 +127,7 @@ a {
   height: 4px;
   background: #fff;
   border-radius: 3px;
-  transition: all 0.5s cubic-bezier(.7,0,.02,1.72);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.02, 1.72);
 }
 
 .burger::after {
@@ -113,7 +137,7 @@ a {
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  transition: all 0.5s cubic-bezier(.7,0,.02,1.72);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.02, 1.72);
   transform: translate(-15px, 10px);
 }
 
@@ -184,7 +208,6 @@ a {
   margin: 10px;
   /* transition: all .2s ease-out; */
   /* filter: grayscale(70%); */
-
 }
 /* .link-item-img:hover {
   filter: none;
@@ -413,7 +436,7 @@ h5 {
     padding: 2rem;
     margin: 0;
   }
-.link-item-img.upper-links {
+  .link-item-img.upper-links {
     width: 5rem;
     height: 5rem;
   }

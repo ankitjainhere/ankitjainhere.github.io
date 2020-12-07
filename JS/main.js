@@ -41,3 +41,22 @@ linksDiv.addEventListener('click', () => {
     }, 1700);
   }, 1000);
 })
+
+
+// Spalsh Screen
+const body = document.querySelector('body');
+const splashScreen = document.querySelector('.splash-screen');
+const splashLogo = document.querySelector('.splash-logo');
+header.style.position = 'unset';
+splashLogo.classList.add('zoomColorFadein');
+
+body.style.overflow = 'hidden';
+setTimeout(() => {
+  header.style.position = 'sticky';
+  splashScreen.style.opacity = 0; 
+  body.style.overflow = 'auto';
+}, 1500);
+
+setTimeout(() => {
+  splashScreen.style.display = 'none'; 
+}, 2000);
