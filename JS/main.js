@@ -42,7 +42,7 @@ fpnavItems.forEach((item) => {
       line1.classList.remove("collapse");
       line2.classList.remove("collapse");
       line3.classList.remove("collapse");
-    }, 500);
+    }, 100);
     header.classList.remove("hide");
     nav.classList.remove("show");
     fullPgNav.classList.remove("show");
