@@ -52,7 +52,6 @@ body {
   filter: none;
 }
 
-
 a {
   text-decoration: none;
   color: #fff;
@@ -97,66 +96,31 @@ a {
   font-size: 1.5rem;
 }
 
-.menu_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.menu_icon {
-  display: none;
-  transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
-}
-
-.burger::before {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 30px;
-  height: 4px;
-  border-radius: 3px;
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.02, 1.72);
-  transform: translate(-15px, -10px);
-}
-
-.burger {
-  width: 30px;
-  height: 4px;
-  background: #fff;
-  border-radius: 3px;
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.02, 1.72);
-}
-
-.burger::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 30px;
-  height: 4px;
-  border-radius: 3px;
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.02, 1.72);
-  transform: translate(-15px, 10px);
-}
-
-/* Burger Amination */
-.menu_icon.open .burger {
-  transform: translateX(-20px);
-  background: transparent;
-}
-
-.menu_icon.open .burger::before {
-  transform: rotate(45deg) translate(4px, -4px);
-}
-
-.menu_icon.open .burger::after {
-  transform: rotate(-45deg) translate(4px, 4px);
-}
-
 .full-pg-nav {
   display: none;
+}
+.full-pg-nav-item {
+  opacity: 0;
+}
+.full-pg-nav-item.show:nth-child(1) {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.full-pg-nav-item.show:nth-child(2) {
+  opacity: 1;
+  transition: all 0.2s linear 0.1s;
+}
+.full-pg-nav-item.show:nth-child(3) {
+  opacity: 1;
+  transition: all 0.2s linear 0.2s;
+}
+.full-pg-nav-item.show:nth-child(4) {
+  opacity: 1;
+  transition: all 0.2s linear 0.3s;
+}
+.full-pg-nav-item.show:nth-child(5) {
+  opacity: 1;
+  transition: all 0.2s linear 0.4s;
 }
 
 #welcome {
@@ -357,9 +321,6 @@ h5 {
   }
   .nav {
     display: none;
-  }
-  .menu_icon {
-    display: flex;
   }
   .header {
     padding-right: 2%;

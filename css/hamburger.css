@@ -1,0 +1,56 @@
+.hamburger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  flex-flow: column;
+}
+/* .hamburger:hover {
+  height: 40;
+} */
+
+.line1,
+.line2,
+.line3 {
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform-origin: center center;
+  margin: 4px;
+}
+.line1.marginplus,
+.line2.marginplus,
+.line3.marginplus {
+  margin: 5px;
+  transition: all .3s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.line1.collapse,
+.line2.collapse,
+.line3.collapse {
+  margin: -1px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.line1.rotate,
+.line2.rotate {
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.line3.rotate {
+  transform: rotate(-45deg);
+  transform-origin: center center;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@media (max-width: 1099px) {
+  .hamburger {
+    display: flex;
+  }
+}
