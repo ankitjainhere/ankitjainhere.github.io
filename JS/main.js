@@ -52,17 +52,20 @@ fpnavItems.forEach((item) => {
 });
 
 const loader = document.querySelector(".loader");
-const linksDiv = document.querySelector("#links");
-linksDiv.addEventListener("click", () => {
-  loader.classList.add("show");
-  setTimeout(() => {
-    loader.classList.add("fade");
+const welcomeLinks = document.querySelectorAll("#links a");
+welcomeLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    loader.classList.add("show");
     setTimeout(() => {
-      loader.classList.remove("show");
-      loader.classList.remove("fade");
-    }, 1700);
-  }, 1000);
-});
+      loader.classList.add("fade");
+      setTimeout(() => {
+        loader.classList.remove("show");
+        loader.classList.remove("fade");
+      }, 1700);
+    }, 1000);
+  });
+})
+
 
 // Spalsh Screen
 const body = document.querySelector("body");
