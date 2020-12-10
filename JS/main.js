@@ -76,8 +76,8 @@ setTimeout(() => {
   header.style.position = "sticky";
   splashScreen.style.opacity = 0;
   body.style.overflow = "auto";
-}, 1500);
+}, 2000);
 
 setTimeout(() => {
   splashScreen.style.display = "none";
-}, 2000);
+}, 2500);

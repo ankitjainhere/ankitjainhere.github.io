@@ -29,28 +29,7 @@ body {
   background-color: black;
 }
 
-.splash-screen {
-  background: #fff;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s linear;
-}
 
-.splash-logo {
-  width: 15vh;
-  filter: grayscale(100%);
-  opacity: 0;
-}
-.splash-logo.zoomColorFadein {
-  width: 25vh;
-  opacity: 1;
-  transition: all 1.2s ease;
-  filter: none;
-}
 
 a {
   text-decoration: none;
