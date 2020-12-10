@@ -126,13 +126,9 @@ a {
   border-radius: 50%;
 }
 
-#profile-about {
-  padding: 4rem;
-  text-align: center;
-}
-
 #profile-about-name {
-  font-size: 4rem;
+  height: 5rem;
+  margin: 2rem;
 }
 #profile-about-tag {
   font-size: 2rem;

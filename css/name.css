@@ -1,0 +1,79 @@
+.ankit-jain {
+    animation: text-fill .5s ease-out forwards 4.5s;
+}
+
+.ankit-jain path:nth-child(1) {
+    stroke-dasharray: 178.072998046875px;
+    stroke-dashoffset: 178.072998046875px;
+    animation: text-anim 2s ease forwards 2;
+}
+
+.ankit-jain path:nth-child(2) {
+    stroke-dasharray: 198.5833740234375px;
+    stroke-dashoffset: 198.5833740234375px;
+    animation: text-anim 2s ease forwards 2.1s;
+}
+
+.ankit-jain path:nth-child(3) {
+    stroke-dasharray: 177.8390350341797px;
+    stroke-dashoffset: 177.8390350341797px;
+    animation: text-anim 2s ease forwards 2.2s;
+}
+
+.ankit-jain path:nth-child(4) {
+    stroke-dasharray: 84.03160858154297px;
+    stroke-dashoffset: 84.03160858154297px;
+    animation: text-anim 2s ease forwards 2.3s;
+}
+
+.ankit-jain path:nth-child(5) {
+    stroke-dasharray: 126.02560424804688px;
+    stroke-dashoffset: 126.02560424804688px;
+    animation: text-anim 2s ease forwards 2.4s;
+}
+
+.ankit-jain path:nth-child(6) {
+    stroke-dasharray: 96.75444793701172px;
+    stroke-dashoffset: 96.75444793701172px;
+    animation: text-anim 2s ease forwards 2.5s;
+}
+
+.ankit-jain path:nth-child(7) {
+    stroke-dasharray: 178.07334899902344px;
+    stroke-dashoffset: 178.07334899902344px;
+    animation: text-anim 2s ease forwards 2.6s;
+}
+
+.ankit-jain path:nth-child(8) {
+    stroke-dasharray: 84.03357696533203px;
+    stroke-dashoffset: 84.03357696533203px;
+    animation: text-anim 2s ease forwards 2.7s;
+}
+
+.ankit-jain path:nth-child(9) {
+    stroke-dasharray: 198.5832977294922px;
+    stroke-dashoffset: 198.5832977294922px;
+    animation: text-anim 2s ease forwards 2.8s;
+}
+
+@keyframes text-anim {
+    /* from {
+        stroke-dashoffset: 200px;
+    } */
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes text-fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+body {
+    background: black;
+}
