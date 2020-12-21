@@ -29,8 +29,6 @@ body {
   background-color: black;
 }
 
-
-
 a {
   text-decoration: none;
   color: #fff;
@@ -123,16 +121,19 @@ a {
 #profile-pic {
   height: 20rem;
   width: 20rem;
+  margin: 3rem;
   border-radius: 50%;
 }
 
 #profile-about {
-  padding: 4rem;
-  text-align: center;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #profile-about-name {
-  height: 5rem;
+  height: 4rem;
   margin: 2rem;
 }
 
