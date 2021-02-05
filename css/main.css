@@ -64,6 +64,7 @@ a {
 }
 
 .nav {
+  display: flex;
   cursor: pointer;
 }
 
@@ -71,7 +72,7 @@ a {
   padding: 0 1rem;
   text-decoration: none;
   color: rgb(219, 219, 219);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 .full-pg-nav {
@@ -79,6 +80,7 @@ a {
 }
 .full-pg-nav-item {
   opacity: 0;
+  color: #000;
 }
 .full-pg-nav-item.show:nth-child(1) {
   opacity: 1;
@@ -149,12 +151,12 @@ a {
   height: 4rem;
   padding: 0.5rem;
   margin: 10px;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in-out;
   /* filter: grayscale(70%); */
 }
 .link-item-img:hover {
   transform: scale(1.4);
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #aboutMe {
