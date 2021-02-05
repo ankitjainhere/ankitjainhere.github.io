@@ -149,12 +149,13 @@ a {
   height: 4rem;
   padding: 0.5rem;
   margin: 10px;
-  /* transition: all .2s ease-out; */
+  transition: all 0.2s ease-out;
   /* filter: grayscale(70%); */
 }
-/* .link-item-img:hover {
-  filter: none;
-} */
+.link-item-img:hover {
+  transform: scale(1.4);
+  transition: all 0.2s ease-out;
+}
 
 #aboutMe {
   /* transform: translateY(-3rem); */
