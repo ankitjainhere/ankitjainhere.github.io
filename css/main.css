@@ -81,6 +81,7 @@ a {
 .full-pg-nav-item {
   opacity: 0;
   color: #000;
+  transition: all 0.2s linear;
 }
 .full-pg-nav-item.show:nth-child(1) {
   opacity: 1;
@@ -375,7 +376,7 @@ h5 {
     position: fixed;
     background: white;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     clip-path: circle(10px at 95% -10%);
     -webkit-clip-path: circle(10px at 95% -10%);
     transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
