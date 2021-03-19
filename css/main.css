@@ -291,9 +291,11 @@ button:hover {
 
 .hr-dark {
   border: 1px solid rgb(0, 0, 0);
+  margin: 1rem 0;
 }
 .hr-light {
   border: 1px solid rgb(255, 255, 255);
+  margin: 1rem 0;
 }
 
 footer {
@@ -353,7 +355,9 @@ h5 {
   #projects-grid {
     grid-template-columns: 1fr;
   }
-  #education {
+  #education,
+  #experience,
+  #open-source {
     padding: 12rem 10%;
   }
   .nav {
@@ -457,7 +461,9 @@ h5 {
   #tech {
     padding: 12rem 2%;
   }
-  #education {
+  #education,
+  #experience,
+  #open-source {
     padding: 12rem 2%;
   }
   footer {
