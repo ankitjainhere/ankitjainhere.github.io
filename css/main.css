@@ -204,7 +204,7 @@ a {
 #projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  padding: 5rem;
+  padding: 5rem 0;
   justify-items: center;
 }
 
@@ -353,9 +353,9 @@ h5 {
   html {
     font-size: 55%;
   }
-  /* #projects-grid {
+  #projects-grid {
     grid-template-columns: 1fr;
-  } */
+  }
   #education,
   #experience,
   #open-source {
