@@ -1,0 +1,32 @@
+.button {
+  border: 1px solid #0d0d0d;
+  padding: 0.5em 1.75em;
+  margin: 1.25em 0.5em;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #0d0d0d;
+  background-color: #0d0d0d;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover, .button:focus {
+  color: white;
+}
+.button:hover::before, .button:focus::before {
+  width: 100%;
+}
+.button:hover::after, .button:focus::after {
+  width: 100%;
+}/*# sourceMappingURL=button.css.map */
